@@ -1,0 +1,130 @@
+###############
+## R_CLASS_I ##
+###############
+
+#Welcome to R I!
+
+#This is the first of a series of three introductory classes on R.
+#In the first class, R I, we'll discuss the origins and basic functions of R.
+
+#In this class we'll look at:
+#1. What is R?
+#2. What can R be aused for?
+#3. A tour around R & RStudio
+#4. Importing data 
+#5. Examining data
+
+##################
+##1. What is R? ##
+##################
+
+#R is a programming language and open-source statistical programming tool 
+#It can be used for data analysis, visualising data and developing software
+#We're going to use RStudio where you can see your data and commands in 4 panels
+#The four panels are the console, where you execute commands; 
+#A history panel; a workspace for display and a file/plot space
+
+###############################
+##2. What can R be used for? ##
+###############################
+
+#There are many reasons why R has become more popular in recent years
+#Some of the reasons are that it can be used for analysis and visuals
+#It’s powerful, free, has a large community of users and packages
+
+#################################
+##3. A tour around R & RStudio ##
+#################################
+
+#R is the program and language
+#RStudio is the user interface or GUI that we’ll be using
+
+#RStudio is useful as you can see your data and commands in 4 panels
+#The four panels are: 
+
+#1.The console is in the bottom left corner
+#This is where you execute commands
+#Execute is just a fancy word for run
+#Let’s try to run a command
+#You can use the console like a calculator
+
+5+5
+
+5*10
+ 
+#Now you can try typing in a command…
+
+#2.The source editor
+#This is directly above the console, in the top left corner
+#Here you can write and edit scripts
+#You can also run scripts from this area
+#It also acts as a dataviewer
+#When you open a dataset, it will appear here
+#That way you can view and inspect datasets that are loaded into the R environment
+
+#3.The workspace 
+#In the top right corner is the workspace 
+#Here you can view objects in their global environment
+#This means viewing what else is loaded onto the directory the scripts are being run from
+#You can also use the top right corner pane to search your command history
+#This allows you to see the scripts and commands you have used in context
+#It can be useful when you want to reuse parts of a script
+
+#What does the history pane show you?
+
+#4.File and plot space 
+#This is in the lower right pane 
+#Here you can view the packages you have installed, plots that you make and R help
+#What can you see is loaded into the Studio environment under the “File” tab?
+
+#You can get different views by toggling between different screens
+#Let’s look at the help command for View
+#Type this into the console
+
+??View
+
+######################
+##4. Importing data ##
+######################
+
+#In order to work in R, we’re going to want to load some data
+
+#There is some data already in our project, see the file panel
+#What is it called?
+
+#The data named DE_EDHIW and DE_PILW is from a group called the Luxembourg Income Study
+#Earlier this year the Guardian published a series on intergenerational inequality
+#This is the equivalised disposable income data for German household by the age of the head of the household
+
+#Let's read one of the csv files into R
+#To read in the data we’ll type…
+read.csv("DE_EDHIW.csv") 
+
+#What can you see?
+
+#Now in this case we want to give the dataset a name
+#Or assign the csv a name
+
+disposableincome <- read.csv("DE_EDHIW.csv")
+
+#In R the default when a csv is being read in by R is to treat the first row as a header row
+
+#Let’s open our data and take a look
+#The command to see the data in a tabulated format is View
+View(disposableincome)
+
+######################
+##5. Examining data ##
+######################
+
+#What does the data look like?
+#What kinds of things might you want to find from this data?
+#What are the top lines you would want to find from the data? 
+
+#We’re going to analyse the data for some story lines in the next session!
+
+###################
+## Caelainn Barr ##
+## The Guardian  ##
+## @caelainnbarr ##
+###################
